@@ -1,0 +1,139 @@
+.bg-wrapp {
+  background: url("../img/services-bg.jpg") top center / cover no-repeat;
+  margin-bottom: 100px;
+}
+
+.services-header {
+  margin-bottom: 100px;
+}
+
+.sub-header-services__title {
+  margin-bottom: 105px;
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.breadcrumbs {
+  padding-bottom: 25px;
+}
+
+.breadcrumbs__link {
+  position: relative;
+  margin-right: 25px;
+  color: #9A9A9A;
+  text-decoration: underline;
+}
+
+.breadcrumbs__link:hover {
+  color: #F5170E;
+  transition: all 0.5s;
+}
+
+.breadcrumbs__link::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  width: 14px;
+  height: 14px;
+  border-bottom: 1px solid #9a9a9a;
+  transform: rotate(-60deg);
+}
+
+.breadcrumbs__link:last-child.breadcrumbs__link::after {
+  display: none;
+}
+
+.services {
+  margin-bottom: 65px;
+}
+
+.services-list {
+  margin-bottom: 65px;
+}
+
+.service-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  color: #000;
+}
+
+.service-card:last-child {
+  margin-bottom: 0;
+}
+
+.service-card__image {
+  max-width: 460px;
+}
+
+.service-card__content {
+  max-width: 655px;
+}
+
+.service-card__title {
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.service-card__info {
+  margin-bottom: 35px;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.service-card__button {
+  display: inline-block;
+  padding: 18px 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #F5170E;
+  border: 1px solid #F5170E;
+  border-radius: 35px;
+}
+
+.service-card__button:hover {
+  color: #fff;
+  background-color: #F5170E;
+  transition: all 0.5s;
+}
+
+.services-paginator {
+  color: #000;
+}
+
+.paginator__menu-item:hover {
+  background-color: #F5170E;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.partners {
+  padding: 90px 0 120px 0;
+  background-color: #f4f5f5;
+}
+
+.partners__title {
+  margin-bottom: 80px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #1A1B1E;
+}
+
+.partners-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 75px;
+  align-items: center;
+
+}
+
+.partners-list__item {
+  max-width: 25%;
+}
+
+
+.services-footer {
+  background-color: #001821;
+}
