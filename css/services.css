@@ -25,6 +25,10 @@
   text-decoration: underline;
 }
 
+.breadcrumbs__item:last-child {
+  margin-right: 0;
+}
+
 .breadcrumbs__item:hover {
   color: #F5170E;
   transition: all 0.5s;

@@ -266,15 +266,13 @@ ul li {
 }
 
 .news-section__slider-card-title {
-  position: relative;
-  top: 15px;
+  margin-top: 15px;
   font-size: 24px;
   font-weight: 700;
 }
 
 .news-section__slider-card-info {
-  position: relative;
-  top: 25px;
+  margin-top: 20px;
   font-size: 16px;
 }
 
