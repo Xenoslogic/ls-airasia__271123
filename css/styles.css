@@ -249,17 +249,18 @@ ul li {
 .news-section__cards {
   display: flex;
   justify-content: space-between;
-  margin-bottom: -60px;
+  margin-bottom: 0px;
 }
 
 .news-section__slider-card {
+  position: relative;
   max-width: 49%;
 }
 
 .news-section__slider-card-content {
-  position: relative;
-  top: -130px;
-  left: 20px;
+  position: absolute;
+  bottom: 50px;
+  left: 32px;
   color: #fff;
   min-height: 95px;
 }
