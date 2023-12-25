@@ -1,0 +1,256 @@
+.bg-wrapp {
+  background: url("../img/services-bg.jpg") top center / cover no-repeat;
+  margin-bottom: 100px;
+}
+
+.reviews-header {
+  margin-bottom: 100px;
+}
+
+.sub-header-reviews__title {
+  margin-bottom: 105px;
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.breadcrumbs {
+  padding-bottom: 25px;
+}
+
+.breadcrumbs__item {
+  display: inline-block;
+  position: relative;
+  margin-right: 25px;
+  color: #9A9A9A;
+  text-decoration: underline;
+}
+
+.breadcrumbs__item:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs__item:hover {
+  color: #F5170E;
+  transition: all 0.5s;
+}
+
+.breadcrumbs__item::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  width: 14px;
+  height: 14px;
+  border-bottom: 1px solid #9a9a9a;
+  transform: rotate(-60deg);
+}
+
+.breadcrumbs__item:last-child.breadcrumbs__item::after {
+  display: none;
+}
+
+.reviews {
+  margin-bottom: 70px;
+}
+
+.review-cards-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.review-card {
+  max-width: 49%;
+  padding: 50px 32px 32px 28px;
+  margin-bottom: 17px;
+  color: #000;
+  background-color: #F4F5F5;
+}
+
+.review-card__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 27px;
+}
+
+.review-card__avatar-image {
+  margin-right: 25px;
+}
+
+.review-card__avatar-link {
+  position: relative;
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.review-card__avatar-link::after {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  transform: translateY(-50%);
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url("../img/vk-blue-1.png")
+}
+
+.review-card__avatar-link:hover {
+  color: #2E77A4;
+}
+
+.review-card__avatar-tour {
+  display: inline-block;
+  padding: 10px 18px;
+  font-size: 13px;
+  color: #303030;
+  background-color: #B9EAE4;
+  border-radius: 35px;
+}
+
+.review-card__title {
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 42px;
+  color: #1A1B1E;
+}
+
+.review-card__text {
+  margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 27px;
+  color: #818181;
+}
+
+.review-card__post-date {
+  font-weight: 600;
+  line-height: 27px;
+  color: #1A1B1E;
+}
+
+.reviews-paginator {
+  color: #000;
+}
+
+.paginator__menu-item:hover {
+  background-color: #F5170E;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.tours-for-u {
+  background: url("../img/tours-for-u-bg.jpg") top center / cover no-repeat;
+  min-height: 365px;
+}
+
+.tours-for-u__title {
+  padding: 117px 0;
+  max-width: 595px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.review-page-form {
+  padding: 62px 0 96px 0;
+  background-color: #F4F5F5;
+}
+
+.review-form__title {
+  margin-bottom: 57px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #1A1B1E;
+}
+
+.review-form__person-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 27px;
+  color: #666666;
+}
+
+.review-form__person-name,
+.review-form__vk-link {
+  padding: 20px 30px;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.review-form__person-name {
+  margin-right: 28px;
+}
+
+.review-form__post {
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 25px;
+  min-height: 235px;
+}
+
+.review-form__checkbox-wrapp {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.review-form__checkbox-info {
+  flex-shrink: 0;
+  margin-right: 75px;
+  font-size: 18px;
+  color: #1A1B1E;
+}
+
+.review-form__checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.review-form__checkbox-item {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.review-form__checkbox-label {
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 35px;
+  color: #303030;
+  background-color: #E7E7E7;
+}
+
+.review-form__checkbox-item:checked+.review-form__checkbox-label {
+  background-color: #B9EAE4;
+}
+
+.review-form__buttons-block {
+  text-align: right;
+}
+
+.review-form__btn-reset,
+.review-form__btn-submit {
+  display: inline-block;
+  padding: 18px 44px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.review-form__btn-reset {
+  background-color: #2B2B2B;
+  margin: 0 18px 0 auto;
+
+}
+
+.review-form__btn-submit {
+  background-color: #F5170E;
+}
+
+.reviews-footer {
+  background-color: #001821;
+}

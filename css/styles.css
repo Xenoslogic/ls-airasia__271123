@@ -39,6 +39,11 @@ ul li {
   list-style: none;
 }
 
+input:focus,
+textarea:focus {
+  border: 1px solid #F5170E;
+}
+
 /* *************** */
 
 .main-page-wrapper {
