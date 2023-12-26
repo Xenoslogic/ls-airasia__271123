@@ -419,6 +419,26 @@ textarea:focus {
 
 .social-links__item {
   opacity: 0.5;
+  width: 36px;
+  height: 36px;
+  background: url("../img/icons/social-sprite.png") no-repeat;
+  cursor: pointer;
+}
+
+.tg-link {
+  background-position: 0px -36px;
+}
+
+.fb-link {
+  background-position: 0px 0px;
+}
+
+.vk-link {
+  background-position: -36px -36px;
+}
+
+.insta-link {
+  background-position: -36px 0px;
 }
 
 .social-links__item:hover {
