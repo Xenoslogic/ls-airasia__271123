@@ -23,14 +23,18 @@
           </div>
           <nav class="menu">
             <ul class="menu__list">
-              <li class="menu__list-item"><a href="#" class="menu__list-link">Главная</a></li>
-              <li class="menu__list-item"><a href="#" class="menu__list-link">Услуги</a></li>
-              <li class="menu__list-item"><a href="#" class="menu__list-link">Отзывы</a></li>
+              <li class="menu__list-item"><a href="./index.html" class="menu__list-link">Главная</a></li>
+              <li class="menu__list-item"><a href="./services.html" class="menu__list-link">Услуги</a></li>
+              <li class="menu__list-item"><a href="./reviews.html" class="menu__list-link">Отзывы</a></li>
             </ul>
           </nav>
           <div class="contacts header__contacts">
             <a href="tel:+88007003030" class="contacts__tel-link">8 800 700 30 30</a>
             <span class="contacts__work-schedule">График работы</span>
+            <div class="contacts__work-schedule-hover">
+              <span>пн-вс: 09:00 - 20:00</span>
+              <span>Обед: 14:00-14:30</span>
+            </div>
           </div>
         </header>
         <div class="sub-header-reviews">
@@ -47,8 +51,8 @@
 
       <section class="reviews">
         <div class="container">
-          <div class="review-cards-block">
-            <div class="review-card">
+          <ul class="review-cards-block">
+            <li class="review-card">
               <div class="review-card__person-block">
                 <div class="review-card__header">
                   <div class="review-card__avatar-image">
@@ -70,8 +74,30 @@
                   <time class="review-card__post-date">Ноябрь 2019</time>
                 </div>
               </div>
-            </div>
-            <div class="review-card">
+            </li>
+            <li class="review-card">
+              <div class="review-card__person-block">
+                <div class="review-card__header">
+                  <div class="review-card__avatar-image">
+                    <img src="./img/user-3.png" alt="фото пользователя">
+                  </div>
+                  <div class="review-card__avatar-info">
+                    <a href="" class="review-card__avatar-link">Лиза Сидорова</a>
+                    <a href="" class="review-card__avatar-tour">Тур по Тайланду</a>
+                  </div>
+                </div>
+                <div class="review-card__content">
+                  <h3 class="review-card__title">Интерестный тур по Таю.</h3>
+                  <p class="review-card__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                    несколько абзацев более менее осмысленного
+                    текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних
+                    условиях. При
+                    создании генератора мы использовали небезизвестный универсальный код речей.</p>
+                  <time class="review-card__post-date">Ноябрь 2019</time>
+                </div>
+              </div>
+            </li>
+            <li class="review-card">
               <div class="review-card__person-block">
                 <div class="review-card__header">
                   <div class="review-card__avatar-image">
@@ -97,30 +123,8 @@
                   <time class="review-card__post-date">Ноябрь 2019</time>
                 </div>
               </div>
-            </div>
-            <div class="review-card">
-              <div class="review-card__person-block">
-                <div class="review-card__header">
-                  <div class="review-card__avatar-image">
-                    <img src="./img/user-3.png" alt="фото пользователя">
-                  </div>
-                  <div class="review-card__avatar-info">
-                    <a href="" class="review-card__avatar-link">Лиза Сидорова</a>
-                    <a href="" class="review-card__avatar-tour">Тур по Тайланду</a>
-                  </div>
-                </div>
-                <div class="review-card__content">
-                  <h3 class="review-card__title">Интерестный тур по Таю.</h3>
-                  <p class="review-card__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
-                    несколько абзацев более менее осмысленного
-                    текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних
-                    условиях. При
-                    создании генератора мы использовали небезизвестный универсальный код речей.</p>
-                  <time class="review-card__post-date">Ноябрь 2019</time>
-                </div>
-              </div>
-            </div>
-            <div class="review-card">
+            </li>
+            <li class="review-card">
               <div class="review-card__person-block">
                 <div class="review-card__header">
                   <div class="review-card__avatar-image">
@@ -141,8 +145,8 @@
                   <time class="review-card__post-date">Ноябрь 2019</time>
                 </div>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
           <div class="paginator reviews-paginator">
             <p class="paginator__info">Страница <span>1 </span>из<span> 7</span></p>
             <ul class="paginator__menu-links">
@@ -164,6 +168,7 @@
         <h2 class="tours-for-u__title">Подберем тур <br>по вашим пожеланиям</h2>
       </div>
     </section>
+
     <section class="review-page-form">
       <div class="container">
         <h2 class="review-form__title">Оставьте отзыв</h2>
@@ -177,29 +182,43 @@
             placeholder="Напишите свой честный отзыв ;)"></textarea>
           <div class="review-form__checkbox-wrapp">
             <span class="review-form__checkbox-info">Какими услугами компании пользуетесь?</span>
-            <div class="review-form__checkbox">
-              <input type="checkbox" name="review-form__checkbox-item" id="review-form__checkbox-item"
-                class="review-form__checkbox-item">
-              <label for="review-form__checkbox-item" class="review-form__checkbox-label">Остров обезьян</label>
-              <input type="checkbox" name="review-form__checkbox-item" id="review-form__checkbox-item"
-                class="review-form__checkbox-item">
-              <label for="review-form__checkbox-item" class="review-form__checkbox-label">Тур по Тайланду</label>
-              <input type="checkbox" name="review-form__checkbox-item" id="review-form__checkbox-item"
-                class="review-form__checkbox-item">
-              <label for="review-form__checkbox-item" class="review-form__checkbox-label">Водопад Янг-бей</label>
-              <input type="checkbox" name="review-form__checkbox-item" id="review-form__checkbox-item"
-                class="review-form__checkbox-item">
-              <label for="review-form__checkbox-item" class="review-form__checkbox-label">Тур по Индонезии</label>
-              <input type="checkbox" name="review-form__checkbox-item" id="review-form__checkbox-item"
-                class="review-form__checkbox-item">
-              <label for="review-form__checkbox-item" class="review-form__checkbox-label">Никакими</label>
-              <input type="checkbox" name="review-form__checkbox-item" id="review-form__checkbox-item"
-                class="review-form__checkbox-item">
-              <label for="review-form__checkbox-item" class="review-form__checkbox-label">Тур по Бали</label>
-              <input type="checkbox" name="review-form__checkbox-item" id="review-form__checkbox-item"
-                class="review-form__checkbox-item">
-              <label for="review-form__checkbox-item" class="review-form__checkbox-label">Другое</label>
-            </div>
+            <ul class="review-form__checkbox">
+              <li>
+                <input type="checkbox" name="review-form__checkbox-item" id="monkey-island"
+                  class="review-form__checkbox-item">
+                <label for="monkey-sland" class="review-form__checkbox-label">Остров обезьян</label>
+              </li>
+              <li>
+                <input type="checkbox" name="review-form__checkbox-item" id="thailand-tour"
+                  class="review-form__checkbox-item">
+                <label for="thailand-tour" class="review-form__checkbox-label">Тур по Тайланду</label>
+              </li>
+              <li>
+                <input type="checkbox" name="review-form__checkbox-item" id="waterfall"
+                  class="review-form__checkbox-item">
+                <label for="waterfall" class="review-form__checkbox-label">Водопад Янг-бей</label>
+              </li>
+              <li>
+                <input type="checkbox" name="review-form__checkbox-item" id="indonesia-tour"
+                  class="review-form__checkbox-item">
+                <label for="indonesia-tour" class="review-form__checkbox-label">Тур по Индонезии</label>
+              </li>
+              <li>
+                <input type="checkbox" name="review-form__checkbox-item" id="no-services"
+                  class="review-form__checkbox-item">
+                <label for="no-services" class="review-form__checkbox-label">Никакими</label>
+              </li>
+              <li>
+                <input type="checkbox" name="review-form__checkbox-item" id="bali-tour"
+                  class="review-form__checkbox-item">
+                <label for="bali-tour" class="review-form__checkbox-label">Тур по Бали</label>
+              </li>
+              <li>
+                <input type="checkbox" name="review-form__checkbox-item" id="other-services"
+                  class="review-form__checkbox-item">
+                <label for="other-services" class="review-form__checkbox-label">Другое</label>
+              </li>
+            </ul>
           </div>
           <div class="review-form__buttons-block">
             <button type="reset" class="review-form__btn-reset">Очистить</button>

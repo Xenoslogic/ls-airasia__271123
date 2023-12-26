@@ -90,6 +90,7 @@ textarea:focus {
 }
 
 .contacts {
+  position: relative;
   margin-left: auto;
   text-align: right;
 }
@@ -106,6 +107,44 @@ textarea:focus {
 
 .contacts__work-schedule {
   font-size: 13px;
+  cursor: pointer;
+}
+
+.contacts__work-schedule-hover {
+  position: absolute;
+  visibility: hidden;
+  content: "";
+  right: 0;
+  top: 60px;
+  padding: 20px;
+  font-weight: 700;
+  color: #1E1F20;
+  background-color: #EDEDED;
+  opacity: 0;
+  z-index: -10;
+}
+
+.contacts__work-schedule-hover::before {
+  position: absolute;
+  bottom: 100%;
+  right: 35px;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border: 15px solid transparent;
+  border-bottom-color: #EDEDED;
+  border-top: 0px;
+}
+
+.contacts__work-schedule-hover span {
+  display: block;
+}
+
+.contacts__work-schedule:hover+.contacts__work-schedule-hover {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+  transition: opacity 2s;
 }
 
 /* PROMO-SECTION */
