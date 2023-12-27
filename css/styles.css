@@ -84,8 +84,10 @@ textarea:focus {
   gap: 54px;
 }
 
-.menu__list-item:hover {
+.menu__list-item:hover,
+.menu__list-item_active {
   color: #DA0100;
+  text-decoration: underline;
   transition: all 0.5s;
 }
 
@@ -121,7 +123,8 @@ textarea:focus {
   color: #1E1F20;
   background-color: #EDEDED;
   opacity: 0;
-  z-index: -10;
+  z-index: 1;
+  transition: opacity 2s;
 }
 
 .contacts__work-schedule-hover::before {
@@ -143,8 +146,7 @@ textarea:focus {
 .contacts__work-schedule:hover+.contacts__work-schedule-hover {
   visibility: visible;
   opacity: 1;
-  z-index: 1;
-  transition: opacity 2s;
+
 }
 
 /* PROMO-SECTION */
@@ -176,6 +178,11 @@ textarea:focus {
   text-transform: uppercase;
   background-color: #F5170E;
   border-radius: 35px;
+}
+
+.promo-section__button:hover {
+  background-color: #fff;
+  color: #F5170E;
 }
 
 /* HOT-TOURS */

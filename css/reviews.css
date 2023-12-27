@@ -220,7 +220,7 @@
   row-gap: 30px;
 }
 
-.review-form__checkbox-item {
+.review-form__checkbox-input {
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -239,7 +239,7 @@
   background-color: #B9EAE4;
 }
 
-.review-form__checkbox-item:checked+.review-form__checkbox-label {
+.review-form__checkbox-input:checked+.review-form__checkbox-label {
   background-color: #B9EAE4;
 }
 
